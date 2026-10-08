@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* HEADER */
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #6b3e26;
+    font-size: 35px;
+}
+
+header p {
+    color: #777;
+}
+
+
+/* SECTION TITLE */
+
+.section-title {
+    text-align: center;
+    color: #6b3e26;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+
+/* MENU */
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* FOOD CARD */
+
+.item {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.item:hover {
+    transform: translateY(-3px);
+}
+
+.food-icon {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.item h2 {
+    color: #6b3e26;
+}
+
+.item p {
+    color: #777;
+}
+
+.item span {
+    color: #d35400;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* QR CODE */
+
+.qr-section {
+    background-color: white;
+    max-width: 400px;
+    margin: 45px auto;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px #ccc;
+}
+
+.qr-section h2 {
+    color: #6b3e26;
+}
+
+.qr-section p {
+    color: #777;
+}
+
+.qr {
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+}
+
+.scan-text {
+    font-weight: bold;
+}
+
+
+/* BACK BUTTON */
+
+.back-button {
+    display: block;
+    width: 170px;
+    margin: 40px auto;
+    padding: 12px;
+    text-align: center;
+    background-color: #6b3e26;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #777;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .qr-section {
+        margin: 30px 10px;
+    }
+
+}
